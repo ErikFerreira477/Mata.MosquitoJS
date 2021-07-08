@@ -65,7 +65,7 @@ function PosRandom() {
             window.location.href = 'fim_de_jogo.html';
         }
         //pega o numero de vidas e coloca os respectivos corações vazios
-        document.getElementById('v' + vid).src = "/imagens/coracao_vazio.png";
+        document.getElementById('v' + vid).src = "../imagens/coracao_vazio.png";
 
         vid++;
     }
@@ -80,7 +80,7 @@ function PosRandom() {
 
     //criando elemento
     let Mosquito = document.createElement('img');
-    Mosquito.src = '/imagens/mosquito.png';
+    Mosquito.src = '../imagens/mosquito.png';
     Mosquito.className = tamanhoAleatorio() + ladoAleatorio();
     Mosquito.style.left = posiçãoX + 'px';
     Mosquito.style.top = posiçãoY + 'px';
