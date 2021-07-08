@@ -1,0 +1,59 @@
+html {
+    cursor: url(/arquivos/imagens/mata_mosquito.png) 30 30, auto;
+    /* 30 pixels para a esquerda e para baixo da dimensão da imagem */
+}
+
+body{
+    background-image: url(/arquivos/imagens/bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* 3 tipos de mosquito */
+
+.Mosquito1{
+    width: 55px;
+    height: 55px;
+}
+
+.Mosquito2{
+    width: 75px;
+    height: 75px;
+}
+
+.Mosquito3{
+    width: 95px;
+    height: 95px;
+}
+
+/* classes para estilizar os lados do mosquito */
+
+.ladoA{
+    transform: scaleX(1);
+}
+
+.ladoB{
+    transform: scaleX(-1);
+    /* serve para inverter a imagem */
+}
+
+#painel{
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    left: 0px;
+    bottom: 0px;
+    border-top: solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+#vidas{
+    float: left;
+}
+
+.cronometro{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}

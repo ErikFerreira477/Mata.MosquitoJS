@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Game mata mosquito</title>
+        <link rel="stylesheet" href="/styles.css"/>
+        <script src="/jogo.js"></script>
+    </head>
+    <body onresize="TelaDinamica()">
+        <div id="painel">
+            <div id="vidas">
+                <img id="v1" src="/imagens/coracao_cheio.png">
+                <img id="v2" src="/imagens/coracao_cheio.png"> 
+                <img id="v3" src="/imagens/coracao_cheio.png">  
+            </div>
+            <div class="cronometro">
+                Tempo restante: <span id="cronometro"></span>
+            </div>
+        </div>
+        <script>
+            document.getElementById('cronometro').innerHTML = tempo;
+
+            let criaMosquito = setInterval(function() {PosRandom()}, criaMosquitoTempo);
+        </script>
+    </body>
+</html>
