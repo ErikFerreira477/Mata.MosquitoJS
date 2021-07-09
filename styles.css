@@ -1,10 +1,10 @@
 html {
-    cursor: url(/arquivos/imagens/mata_mosquito.png) 30 30, auto;
+    cursor: url(imagens/mata_mosquito.png) 30 30, auto;
     /* 30 pixels para a esquerda e para baixo da dimensão da imagem */
 }
 
 body{
-    background-image: url(/arquivos/imagens/bg.jpg);
+    background-image: url(imagens/bg.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
